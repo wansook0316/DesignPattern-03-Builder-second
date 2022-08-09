@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CEA99BDF28A23EDB00D1BB31 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA99BDE28A23EDB00D1BB31 /* main.swift */; };
+		CEA99BEA28A2592D00D1BB31 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA99BE928A2592D00D1BB31 /* Builder.swift */; };
+		CEA99BEC28A2593500D1BB31 /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA99BEB28A2593500D1BB31 /* Director.swift */; };
+		CEA99BEE28A2593F00D1BB31 /* PlainTextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA99BED28A2593F00D1BB31 /* PlainTextBuilder.swift */; };
+		CEA99BF028A2594700D1BB31 /* JSONBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA99BEF28A2594700D1BB31 /* JSONBuilder.swift */; };
+		CEA99BF228A2594E00D1BB31 /* XMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA99BF128A2594E00D1BB31 /* XMLBuilder.swift */; };
+		CEA99BF828A259CE00D1BB31 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA99BF728A259CE00D1BB31 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		CEA99BDB28A23EDB00D1BB31 /* Builder-02 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Builder-02"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA99BDE28A23EDB00D1BB31 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CEA99BE928A2592D00D1BB31 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		CEA99BEB28A2593500D1BB31 /* Director.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Director.swift; sourceTree = "<group>"; };
+		CEA99BED28A2593F00D1BB31 /* PlainTextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTextBuilder.swift; sourceTree = "<group>"; };
+		CEA99BEF28A2594700D1BB31 /* JSONBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBuilder.swift; sourceTree = "<group>"; };
+		CEA99BF128A2594E00D1BB31 /* XMLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLBuilder.swift; sourceTree = "<group>"; };
+		CEA99BF728A259CE00D1BB31 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,31 @@
 		CEA99BDD28A23EDB00D1BB31 /* Builder-02 */ = {
 			isa = PBXGroup;
 			children = (
+				CEA99BF628A2597D00D1BB31 /* Implementations */,
+				CEA99BF328A2595700D1BB31 /* Interfaces */,
+				CEA99BEB28A2593500D1BB31 /* Director.swift */,
+				CEA99BF728A259CE00D1BB31 /* Data.swift */,
 				CEA99BDE28A23EDB00D1BB31 /* main.swift */,
 			);
 			path = "Builder-02";
+			sourceTree = "<group>";
+		};
+		CEA99BF328A2595700D1BB31 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CEA99BE928A2592D00D1BB31 /* Builder.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CEA99BF628A2597D00D1BB31 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				CEA99BED28A2593F00D1BB31 /* PlainTextBuilder.swift */,
+				CEA99BEF28A2594700D1BB31 /* JSONBuilder.swift */,
+				CEA99BF128A2594E00D1BB31 /* XMLBuilder.swift */,
+			);
+			path = Implementations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA99BF828A259CE00D1BB31 /* Data.swift in Sources */,
 				CEA99BDF28A23EDB00D1BB31 /* main.swift in Sources */,
+				CEA99BEE28A2593F00D1BB31 /* PlainTextBuilder.swift in Sources */,
+				CEA99BEC28A2593500D1BB31 /* Director.swift in Sources */,
+				CEA99BF228A2594E00D1BB31 /* XMLBuilder.swift in Sources */,
+				CEA99BEA28A2592D00D1BB31 /* Builder.swift in Sources */,
+				CEA99BF028A2594700D1BB31 /* JSONBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
