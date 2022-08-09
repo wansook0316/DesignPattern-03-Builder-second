@@ -7,5 +7,16 @@
 
 import Foundation
 
-print("Hello, World!")
+internal func main() {
+    let data = Data(name: "wansik", age: 28)
+    let builder = PlainTextBuilder(data: data)
+    let director = Director(builder: builder)
+    
+    let result = director.build()
+    
+    print(result)
+}
+
+main()
+
 

@@ -17,5 +17,5 @@ internal struct Director {
         """
     }
     
-    private var builder: Builder
+    internal let builder: Builder
 }
