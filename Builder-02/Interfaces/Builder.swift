@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+internal protocol Builder {
+    
+    var data: Data { get set }
+    
+    func head() -> String
+    func body() -> String
+    func foot() -> String
+    
+}
