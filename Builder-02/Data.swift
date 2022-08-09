@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+internal struct Data {
+    
+    internal let name: String
+    internal let age: Int
+    
+}
