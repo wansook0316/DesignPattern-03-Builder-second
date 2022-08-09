@@ -13,7 +13,9 @@ internal struct Director {
         return """
         +++ \(type(of: self.builder)) 을 사용해서 Build함 +++
         
-        \(self.builder.head()) \(self.builder.body()) \(self.builder.foot())
+        \(self.builder.head())
+        \(self.builder.body())
+        \(self.builder.foot())
         """
     }
     
